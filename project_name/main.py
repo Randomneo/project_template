@@ -6,5 +6,5 @@ app = FastAPI()
 
 
 @app.get('/')
-def home():
-    return f'Hello world {randint()}'
+def home() -> str:
+    return f'Hello world {randint(0, 10)}'
